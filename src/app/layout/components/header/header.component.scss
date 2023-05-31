@@ -10,10 +10,11 @@ $fontText: "system-ui";
 }
 .header-bg {
   position: absolute;
-  width: 1920px;
+  width: 1800px;
   height: 152px;
   left: 0px;
   top: 0px;
+  padding: 20px;
   background: $headerMain;
 }
 .group33 {
@@ -301,9 +302,6 @@ $fontText: "system-ui";
 
   .category {
     /* Category */
-
-    /* Auto layout */
-
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -312,7 +310,6 @@ $fontText: "system-ui";
 
     width: 1320px;
     height: 24px;
-    // background-color: aqua;
 
     /* Inside auto layout */
 
@@ -321,45 +318,37 @@ $fontText: "system-ui";
     flex-grow: 0;
 
     span {
-      /* Jewelry & Accessories */
 
       width: 155px;
       height: 24px;
-
-      /* Body Texts/Text 6 */
-
       font-family: "system-ui";
       font-style: normal;
       font-weight: 400;
       font-size: 14px;
       line-height: 24px;
-      /* identical to box height, or 171% */
-
-      /* Color Text / Text */
-
       color: #3e3e3e;
-
       /* Inside auto layout */
-
       flex: none;
       order: 0;
       flex-grow: 0;
+      position: relative;
     }
 
     span:hover {
       cursor: pointer;
-      // /* Hover */
-
-      // position: absolute;
-      // width: 42px;
-      // height: 4px;
-      // left: 818px;
-      // top: 136px;
-
-      /* Main/Third */
-
+    }
+    .under-line{
+      display: none;
+    }
+    .under-line{
+      cursor: pointer;
+      display: block;
       background: #eb8426;
       border-radius: 50px;
+      position: absolute;
+      top: 35px;
+      width: 45px;
+      height: 4px;
     }
   }
 }

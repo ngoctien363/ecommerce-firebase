@@ -11,7 +11,7 @@ import {MatSelectModule} from '@angular/material/select';
   declarations: [
     HeaderComponent,
     SidebarComponent,
-    LayoutComponent
+    LayoutComponent,
   ],
   imports: [
     CommonModule,

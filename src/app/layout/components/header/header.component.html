@@ -21,6 +21,19 @@
 
     <div class="container">
       <div class="all-categories">
+        <div class="row">
+          <div class="col">
+            <div ngbDropdown class="d-inline-block">
+              <button type="button" class="btn btn-outline-primary" id="dropdownBasic1" ngbDropdownToggle>
+                All Categories
+              </button>
+              <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+                <button ngbDropdownItem>Action - 1</button>
+                <button ngbDropdownItem>Another Action</button>
+                <button ngbDropdownItem>Something else is here</button>
+              </div>
+            </div>
+          </div>
         <!-- <mat-form-field>
           <mat-label>All Categories</mat-label>
           <mat-select>
@@ -40,6 +53,7 @@
     <div class="header-menu">
       <div class="category">
         <span *ngFor="let item of menu">{{item.value}}</span>
+        <div class="under-line"></div>
       </div>
     </div>
 
