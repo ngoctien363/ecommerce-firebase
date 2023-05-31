@@ -1,0 +1,354 @@
+$headerMain: #fff9f3;
+$fontText: "system-ui";
+
+.main_header {
+  position: absolute;
+  left: 0%;
+  right: 0%;
+  top: 0%;
+  bottom: 95.65%;
+}
+.header-bg {
+  position: absolute;
+  width: 1800px;
+  height: 152px;
+  left: 0px;
+  top: 0px;
+  padding: 20px;
+  background: $headerMain;
+}
+.group33 {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  left: 1542px;
+  top: 12px;
+  .ellipse {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background: #eb6d20;
+  }
+  .textEllipse {
+    font-family: $fontText;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 23px;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+
+    width: 21px;
+  }
+}
+
+.shop-account {
+  /* shop/account */
+
+  /* Auto layout */
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  gap: 24px;
+
+  position: absolute;
+  width: 205px;
+  height: 24px;
+  left: 1415px;
+  top: 36px;
+  // background-color: red;
+
+  .account {
+    /* Account */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 8px;
+
+    width: 91px;
+    height: 24px;
+    img {
+      /* User */
+
+      width: 24px;
+      height: 24px;
+
+      /* Inside auto layout */
+
+      flex: none;
+      order: 0;
+      flex-grow: 0;
+    }
+    span {
+      /* Account */
+
+      width: 59px;
+      height: 24px;
+
+      /* Body Texts/Text 6 */
+
+      font-family: $fontText;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 24px;
+      /* identical to box height, or 171% */
+
+      /* Color Text / Text */
+
+      color: #3e3e3e;
+
+      /* Inside auto layout */
+
+      flex: none;
+      order: 1;
+      flex-grow: 0;
+    }
+  }
+  .shopping {
+    /* Shopping */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    gap: 8px;
+
+    width: 90px;
+    height: 24px;
+    img {
+      /* User */
+
+      width: 24px;
+      height: 24px;
+
+      /* Inside auto layout */
+
+      flex: none;
+      order: 0;
+      flex-grow: 0;
+    }
+    span {
+      /* Account */
+
+      width: 59px;
+      height: 24px;
+
+      /* Body Texts/Text 6 */
+
+      font-family: $fontText;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 24px;
+      /* identical to box height, or 171% */
+
+      /* Color Text / Text */
+
+      color: #3e3e3e;
+
+      /* Inside auto layout */
+
+      flex: none;
+      order: 1;
+      flex-grow: 0;
+    }
+  }
+}
+.logo {
+  position: absolute;
+  width: 200px;
+  height: 48px;
+  left: 300px;
+  top: 24px;
+  img {
+    position: absolute;
+    width: 131.76px;
+    height: 14.16px;
+    left: 1.38px;
+    top: 17.02px;
+  }
+}
+.container {
+  /* Container/search */
+
+  /* Auto layout */
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 8px 12px 8px 8px;
+  gap: 16px;
+  position: absolute;
+  width: 700px;
+  height: 30px;
+  left: 524px;
+  top: 24px;
+
+  /* Main / White */
+
+  background: #eee;
+  border-radius: 50px;
+
+  .all-categories {
+    width: 82px;
+    height: 16px;
+
+    /* Body Texts/Text 1 */
+
+    font-family: $fontText;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    /* identical to box height, or 133% */
+
+    /* Color Text / Text */
+
+    color: #3e3e3e;
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 1;
+  }
+  .search {
+    width: 530px;
+    height: 16px;
+
+    /* Body Texts/Text 1 */
+
+    font-family: $fontText;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    /* identical to box height, or 133% */
+
+    /* Color Text / Subtext */
+
+    color: #9a9a9a;
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 1;
+    flex-grow: 1;
+  }
+}
+.help {
+  /* Help */
+
+  /* Auto layout */
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 16px 30px;
+  gap: 10px;
+  position: absolute;
+  left: 1308px;
+  top: 24px;
+  background: #eb6d20;
+  border-radius: 50px;
+
+  /* text */
+  width: 28px;
+  height: 16px;
+
+  /* Body Texts/Text 2 */
+
+  font-family: $fontText;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  /* identical to box height, or 133% */
+
+  /* Main / White */
+
+  color: #ffffff;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.header-menu {
+  /* Header/Menu */
+
+  /* Auto layout */
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 4px 0px;
+  gap: 24px;
+
+  position: absolute;
+  width: 1320px;
+  height: 32px;
+  left: 300px;
+  top: 96px;
+
+  .category {
+    /* Category */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 48px;
+
+    width: 1320px;
+    height: 24px;
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+
+    span {
+
+      width: 155px;
+      height: 24px;
+      font-family: "system-ui";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 24px;
+      color: #3e3e3e;
+      /* Inside auto layout */
+      flex: none;
+      order: 0;
+      flex-grow: 0;
+      position: relative;
+    }
+
+    span:hover {
+      cursor: pointer;
+    }
+    .under-line{
+      display: none;
+    }
+    .under-line{
+      cursor: pointer;
+      display: block;
+      background: #eb8426;
+      border-radius: 50px;
+      position: absolute;
+      top: 35px;
+      width: 45px;
+      height: 4px;
+    }
+  }
+}

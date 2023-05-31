@@ -1,0 +1,61 @@
+<div class="main_header">
+  <div class="header-bg">
+    <div class="group33">
+      <div class="ellipse">
+        <div class="textEllipse">16</div>
+      </div>
+    </div>
+
+    <div class="shop-account">
+      <div class="account">
+        <img [src]="user">
+        <span>Account</span>
+      </div>
+      <div class="shopping">
+        <img [src]="cart">
+        <span>Shopping</span>
+      </div>
+    </div>
+
+    <div class="help">Help</div>
+
+    <div class="container">
+      <div class="all-categories">
+        <div class="row">
+          <div class="col">
+            <div ngbDropdown class="d-inline-block">
+              <button type="button" class="btn btn-outline-primary" id="dropdownBasic1" ngbDropdownToggle>
+                All Categories
+              </button>
+              <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+                <button ngbDropdownItem>Action - 1</button>
+                <button ngbDropdownItem>Another Action</button>
+                <button ngbDropdownItem>Something else is here</button>
+              </div>
+            </div>
+          </div>
+        <!-- <mat-form-field>
+          <mat-label>All Categories</mat-label>
+          <mat-select>
+            <mat-option value="one">First option</mat-option>
+            <mat-option value="two">Second option</mat-option>
+          </mat-select>
+        </mat-form-field> -->
+      </div>
+      <div class="search"></div>
+      <div class="searchIcon"></div>
+    </div>
+    
+    <div class="logo">
+      <img [src]="LOGO" alt="no-img">
+    </div>
+    <!-- Header Menu-->
+    <div class="header-menu">
+      <div class="category">
+        <span *ngFor="let item of menu">{{item.value}}</span>
+        <div class="under-line"></div>
+      </div>
+    </div>
+
+  </div>
+</div>

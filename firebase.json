@@ -1,0 +1,17 @@
+{
+  "hosting": {
+    "site": "angular-ecommerce-482db-70680",
+    "public": "src",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  }
+}
