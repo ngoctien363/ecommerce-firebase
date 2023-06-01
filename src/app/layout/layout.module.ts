@@ -6,7 +6,6 @@ import { SidebarComponent } from './components/sidebar/sidebar.component';
 import { LayoutComponent } from './layout.component';
 import {MatSelectModule} from '@angular/material/select';
 
-
 @NgModule({
   declarations: [
     HeaderComponent,
@@ -16,7 +15,7 @@ import {MatSelectModule} from '@angular/material/select';
   imports: [
     CommonModule,
     LayoutRoutingModule,
-    MatSelectModule
+    MatSelectModule,
   ]
 })
 export class LayoutModule { }
