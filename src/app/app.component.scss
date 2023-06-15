@@ -1,0 +1,17 @@
+.container-fluid {
+    height: 100vh;
+//       overflow-x: hidden;
+//   overflow-y: scroll;
+//   overflow: hidden;
+}
+html, body, app-root, .app-frame {
+    overflow: hidden;
+    margin: 0;
+    height: 100%;
+    box-sizing: border-box;
+}
+@media (max-width: 767px) {
+.modal-dialog {
+    min-height: calc(100vh - 20px);
+}
+}

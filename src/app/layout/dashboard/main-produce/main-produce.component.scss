@@ -1,0 +1,102 @@
+@import "../../../../styles.scss";
+$background-color: (#d3fbd9, #ffe4bd, #d9abfd, #fdf0ab);
+
+// .container {
+//   position: absolute;
+//   left: 290px;
+//   top: 205px;
+// }
+.col{
+  padding-top: 24px;
+  width: 312px !important;
+  .text,
+  .price {
+    font-family: $fontText;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    padding-left: 24px;
+    height: 64px;
+    padding-top: 8px;
+  }
+
+  .colorText {
+    font-family: $fontText;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 8px;
+    position: absolute;
+    width: 160px;
+    height: 16px;
+    left: 0px;
+    top: 245px;
+    padding-left: 24px;
+  }
+  .framge-color {
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 8px;
+    width: 160px;
+    height: 16px;
+    padding-left: 24px;
+    .framge--color {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      padding: 0px;
+      gap: 8px;
+    }
+    img {
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+  // loop for background color
+  @for $i from 1 to 5 {
+    .example-card#{$i} {
+      background-color: nth($background-color, $i);
+      width: 310px;
+      height: 418px;
+    }
+  }
+}
+.rectangle {
+  /* Rectangle 64 */
+
+  position: absolute;
+  width: 424px;
+  height: 174px;
+  left: 300px;
+  top: 846px;
+
+  /* Base / Gray Background */
+
+  background: $GrayBackground;
+  border-radius: 5px;
+}
+
+
+@media screen and (max-width: 992px) {
+  .container {
+    margin-left: 0px !important;
+  }
+}
+
+@media print {
+  .container {
+    margin-top: 0px !important;
+    margin-left: 0px !important;
+  }
+}

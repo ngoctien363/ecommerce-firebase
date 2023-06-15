@@ -1,1 +1,46 @@
-<p>main-produce works!</p>
+<div class="container">
+  <div class="row">
+    <div class="col" *ngFor="let produce of produces; let i = index">
+    <mat-card [ngClass]="'example-card' + produce.id">
+      <img mat-card-image [src]="produce.imagePath" style="border-radius: 5px; padding: 56px 56px 25px 56px" />
+      <span class="colorText">Colors</span>
+      <div class="framge-color">
+        <div *ngIf="i === 0" class="framge--color">
+          <div *ngFor="let item of listFrameColor">
+            <img [src]="item.imagePath" />
+          </div>
+        </div>
+
+        <div *ngIf="i === 1" class="framge--color">
+          <div *ngFor="let item of listFrameColor.slice(3)">
+            <img [src]="item.imagePath" />
+          </div>
+        </div>
+
+        <div *ngIf="i === 2" class="framge--color">
+          <div *ngFor="let item of listFrameColor.slice(5)">
+            <img [src]="item.imagePath" />
+          </div>
+        </div>
+
+        <div *ngIf="i === 3" class="framge--color">
+          <div *ngFor="let item of listFrameColor.slice(4)">
+            <img [src]="item.imagePath" />
+          </div>
+        </div>
+      </div>
+      <span class="text">{{ produce.text }}</span>
+      <span class="price">{{ produce.price }}</span>
+    </mat-card>
+  </div>
+  </div>
+  
+  <div class="row">
+    <div class="rectangle">
+    <div class="item" *ngFor="let item of listRectangle">
+      <img [src]="item.imagePath" />
+      <span>{{ item.title }}</span>
+    </div>
+  </div>
+  </div>
+</div>

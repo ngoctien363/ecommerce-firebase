@@ -1,7 +1,13 @@
 /* You can add global styles to this file, and also import other style files */
+@import "../node_modules/bootstrap/scss/bootstrap";
 $headerMain: #fff9f3;
 $fontText: "system-ui";
 $GreenLight: #d3fbd9;
 $BrownLight: #ffe4bd;
 $Pink: #d9abfd;
 $YellowLight: #fdf0ab;
+$GrayBackground: #f5f6f8;
+
+body::-webkit-scrollbar {
+  display: none; /* cho Chrome, Safari, and Opera */
+}

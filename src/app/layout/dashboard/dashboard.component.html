@@ -1,27 +1,11 @@
-<div class="container">
-  <div class="row main-body">
-    <div class="col-md-8" *ngFor="let slider of sliders">
-      <img [src]="slider.imagePath" />
-      <span>{{ slider.label }}</span>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-md-6" *ngFor="let produce of produces; let i = index">
-      <mat-card [ngClass]="'example-card' + produce.id">
-        <img
-          mat-card-image
-          [src]="produce.imagePath"
-          style="border-radius: 5px; padding: 56px 56px 25px 56px"
-        />
-        <span class="colorText">Colors</span>
-        <div class="framge-color">
-          <div *ngFor="let item of listFramgeColor; let i = index">
-            <img [src]="item.imagePath" />
+<div class="main-header">
+  <div class="container">
+    <div class="row">
+          <div class="col" *ngFor="let slider of sliders" style="padding: 20px 0 0 0;">
+            <img [src]="slider.imagePath" width="415px" height="180px" />
+            <span>{{ slider.label }}</span>
           </div>
-        </div>
-        <span class="text">{{ produce.text }}</span>
-        <span class="price">{{ produce.price }}</span>
-      </mat-card>
     </div>
   </div>
 </div>
+<app-main-produce></app-main-produce>

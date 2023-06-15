@@ -1,87 +1,35 @@
 @import "../../../styles.scss";
 $background-color: (#d3fbd9, #ffe4bd, #d9abfd, #fdf0ab);
 
-.container {
-  position: absolute;
-  width: 1320px;
-  height: 32px;
-  left: 300px;
-  top: 24px;
+.main-header {
+  background-color: $GrayBackground;
+  width: 100%;
+  height: 400px;
 }
-.row {
-  display: flex;
-  .col-md-8 {
-    padding-right: 24px;
-    span {
+ span {
       position: absolute;
       width: 138px;
       height: 20px;
-      top: 145px;
+      top: 160px;
       font-family: $fontText;
       font-style: normal;
       font-weight: 500;
-      font-size: 16px;
+      font-size: 15px;
       line-height: 20px;
       color: #ffffff;
       display: flex;
       padding-left: 15px;
     }
+
+@media screen and (max-width: 992px) {
+  .main-header {
+    margin-left: 0px !important;
   }
-  .col-md-6 {
-    padding-right: 24px;
-    padding-top: 24px;
-    .text,
-    .price {
-      font-family: $fontText;
-      font-style: normal;
-      font-weight: 400;
-      font-size: 14px;
-      line-height: 24px;
-      padding-left: 24px;
-      height: 64px;
-      padding-top: 8px;
-    }
+}
 
-    .colorText {
-      font-family: $fontText;
-      font-style: normal;
-      font-weight: 500;
-      font-size: 12px;
-      line-height: 16px;
-
-      display: flex;
-      flex-direction: row;
-      align-items: flex-start;
-      padding: 0px;
-      gap: 8px;
-      position: absolute;
-      width: 160px;
-      height: 16px;
-      left: 0px;
-      top: 245px;
-      padding-left: 24px;
-    }
-    .framge-color {
-      /* Auto layout */
-
-      display: flex;
-      flex-direction: row;
-      align-items: flex-start;
-      padding: 0px;
-      gap: 8px;
-      // position: absolute;
-      width: 160px;
-      height: 16px;
-      // left: 0px;
-      // top: 270px;
-      padding-left: 24px;
-    }
-    @for $i from 1 to 5 {
-      .example-card#{$i} {
-        background-color: nth($background-color, $i);
-        width: 312px;
-        height: 418px;
-      }
-    }
+@media print {
+  .main-header {
+    margin-top: 0px !important;
+    margin-left: 0px !important;
   }
 }
